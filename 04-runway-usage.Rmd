@@ -90,7 +90,7 @@ raw_lnpru = read.csv(file = "Late_Night_Preferential_Runway_Use_Data_200501-2014
 ```
 
 ```{r include = FALSE}
-source("04-set-data-dir.R")
+source("00-set-data-dir.R")
 if(!file.exists(file.path(data_dir, "Late_Night_Preferential_Runway_Use_Data_200501-201412.csv"))) {
   download.file(paste0("https://raw.githubusercontent.com/jenzopr/",
                        "R-tidy-data-LoR/sf-runway-example/04-runway-usage_files/Late_Night_Preferential_Runway_Use_Data_200501-201412.csv"), 
